@@ -15,7 +15,7 @@ import "./styles/register.scss";
 import "./styles/carCard.scss";
 import "./styles/cars.scss";
 import "./styles/singleCar.scss";
-import "./styles/Bookingpage.scss";
+import "./styles/bookingpage.scss";
 
 function App() {
   return (
