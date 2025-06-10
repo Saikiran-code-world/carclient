@@ -1,0 +1,131 @@
+// Global styles for the login container
+$primary-color: #007BFF;
+$hover-color: #0056b3;
+$background-color: #f4f4f4;
+$error-color: red;
+$input-border-color: #ccc;
+$input-hover-border-color: $primary-color;
+$input-padding: 12px;
+$button-padding: 15px;
+
+// Overall container for the login form
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $background-color;
+  padding: 20px;
+}
+
+// Style for the login title
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+// Error message styling
+.error-message {
+  color: $error-color;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+// Form styling
+.login-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+// Input container styling
+.input-container {
+  margin-bottom: 15px;
+}
+
+// Input field styling
+.input-field {
+  width: 100%;
+  padding: $input-padding;
+  margin-top: 5px;
+  border: 1px solid $input-border-color;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  
+  &:hover {
+    border-color: $input-hover-border-color;
+  }
+}
+
+// Submit button styling
+.submit-button {
+  width: 100%;
+  padding: $button-padding;
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+// Register link styling
+.register-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+// Media queries for responsiveness
+
+// Mobile and tablet view styling (max-width: 768px)
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+
+  .input-field {
+    padding: 12px;
+  }
+
+  .submit-button {
+    padding: 15px;
+  }
+}
+
+// Laptop view and larger (min-width: 769px)
+@media (min-width: 769px) {
+  .login-container {
+    padding: 50px;
+  }
+
+  .login-form {
+    padding: 40px;
+  }
+}

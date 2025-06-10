@@ -1,0 +1,41 @@
+// Cars.scss
+
+.cars-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .cars-header {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+  }
+  
+  .loading {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .error {
+    font-size: 1.5rem;
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .cars-header {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  
+    .loading,
+    .error {
+      font-size: 1.4rem;
+    }
+  }
+  

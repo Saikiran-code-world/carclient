@@ -1,0 +1,111 @@
+
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .car-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .car-card > .car-card-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .car-card-header > .car-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .car-card-header > .car-name:hover {
+    color: #007bff;
+  }
+  
+  .car-card-header > .car-segment {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin: 5px 0;
+  }
+  
+  .car-card > .car-card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-card-body > .car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .car-card-body > .car-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .car-card-body > .car-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 15px;
+  }
+  
+  .car-card-body > .car-fuel,
+  .car-card-body > .car-seater,
+  .car-card-body > .car-transmission {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 5px 0;
+  }
+  
+  .car-card-body > .car-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition:  0.3s ease-in;
+    margin-top: 20px;
+  }
+  
+  .car-card-body > .car-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .car-card {
+    animation: slideIn 0.8s ease-out;
+  }
+  

@@ -1,0 +1,60 @@
+  /* Header.scss */
+  .header {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(31, 18, 18);
+    padding: 15px 0;
+    z-index: 2; /* Make sure it stays on top of the background image */
+    // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .logo {
+    color: #df543f;
+    font-size: 24px;
+    font-weight: 900;
+    list-style: none;
+  }
+
+  .nav-items {
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-evenly; /* Center nav items horizontally */
+  }
+
+  .nav-items ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styles */
+  }
+
+  .nav-items li {
+    margin: 0 20px; /* Space between each nav item */
+    font-weight :400;
+  }
+
+  .nav-link {
+    color: rgb(7, 5, 5);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    position: relative; /* Position relative for better hover interaction */
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; /* Transition only on the specific properties */
+  }
+
+  .nav-link:hover {
+    background-color: black;
+    font-weight: 400;
+    color: #f04025;
+    text-decoration: underline;
+    border-radius: 20px 0 20px 0;
+  }
