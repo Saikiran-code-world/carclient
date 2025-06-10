@@ -12,7 +12,7 @@ import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/login.scss";
 import "./styles/register.scss";
-import "./styles/CarCard.scss";
+import "./styles/carCard.scss";
 import "./styles/cars.scss";
 import "./styles/singleCar.scss";
 import "./styles/Bookingpage.scss";
