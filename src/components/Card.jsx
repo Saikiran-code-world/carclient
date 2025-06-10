@@ -17,7 +17,7 @@ const CarCard = ({ cars }) => {
           </div>
           <div className="car-card-body">
             <img
-              src={`http://localhost:4000/${car.carImage}`}
+              src={`https://carserver-wioc.onrender.com/${car.carImage}`}
               alt={car.name}
               className="car-image"
               loading="lazy"

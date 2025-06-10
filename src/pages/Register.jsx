@@ -18,7 +18,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/user/register",
+        "https://carserver-wioc.onrender.com/user/register",
         { username, email, password },
         { withCredentials: true }
       );

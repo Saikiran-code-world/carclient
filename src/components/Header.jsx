@@ -16,7 +16,7 @@ const Header = () => {
   const handleLogout = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.get("http://localhost:4000/user/logout", { withCredentials: true });
+      const { data } = await axios.get("https://carserver-wioc.onrender.com/user/logout", { withCredentials: true });
 
       if (data.success) {
         localStorage.removeItem('token')
